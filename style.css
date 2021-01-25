@@ -1,0 +1,29 @@
+body {
+  background: #ECF0F9;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  color: #000000;
+  font-size: 16px;
+}
+
+.my-card {
+  height: auto;
+  background: #f5f5f5 ;
+  border-radius: 20px;
+}
+.my-card:hover{
+  background: #fffff9;
+}
+.product {
+  padding: 15px;
+  width: auto;
+  height: 200px;
+}
+.card img {
+  border-radius: 30px;
+}
+.number {
+  font-size: 24px;
+}
