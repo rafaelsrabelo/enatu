@@ -39,46 +39,24 @@
       </div>
     </nav>
     <div class="container mt-4">
-      <h2>Estoque:</h2>
+      <h2 class="mb-2">Estoque:</h2>
       <div class="row">
+
         <div class="col-lg-4 col-sm-6 col-xs-12">
           <div class="my-card card">
             <img class="product" src="img/morango.jpg" alt="">
-            <div class="card-body">
-              <p class="title text-center">Geléia de Morango</p>
-              <button type="button" class="btn btn-success mb-1"><strong>+</strong></button>
-              <button type="button" class="btn btn-danger"><strong>-</strong></button>
-              <a href="" class="number text-center mt-2 mb-2">
-                <span class="badge badge-light">30</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 col-xs-12">
-          <div class="my-card card">
-            <img class="product" src="img/morango.jpg" alt="">
-            <p class="title text-center">Geléia de Morango</p>
-            <button type="button" class="btn btn-success mb-1"><strong>+</strong></button>
-            <button type="button" class="btn btn-danger"><strong>-</strong></button>
+            <p class="title text-center"><strong>{{ flavor }}</strong></p>
+            <button v-on:click="add" type="button" class="btn btn-success mb-1 mr-2 ml-2"><strong>+</strong></button>
+            <button v-on:click="decrease" type="button" class="btn btn-danger mr-2 ml-2"><strong>-</strong></button>
             <a href="" class="number text-center mt-2 mb-2">
-              <span class="badge badge-light">30</span>
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 col-xs-12">
-          <div class="my-card card">
-            <img class="product" src="img/morango.jpg" alt="">
-            <p class="title text-center">Geléia de Morango</p>
-            <button type="button" class="btn btn-success mb-1"><strong>+</strong></button>
-            <button type="button" class="btn btn-danger"><strong>-</strong></button>
-            <a href="" class="number text-center mt-2 mb-2">
-              <span class="badge badge-light">30</span>
+              <span class="badge badge-light">{{ amount}} </span>
             </a>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>

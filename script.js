@@ -1,7 +1,16 @@
-function alterar() {
-  document.getElementById("title").innerHTML = "Trocou título";
-  document.getElementById("camp").placeholder = "Trocou placeholder";
-};
-
-alterar();
-alert("Função alterar feita com sucesso!");
+new Vue({
+  el: '#app',
+  data: {
+    flavor: 'Morango',
+    amount: 0,
+  }, methods: {
+    add() {
+      console.log("Added")
+      this.amount++
+    },
+    decrease() {
+      console.log("Decreased")
+      this.amount--
+    }
+  }
+})
