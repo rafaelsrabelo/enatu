@@ -1,7 +1,7 @@
 new Vue({
   el: '#app',
   data: {
-    flavor: 'Morango',
+    flavor: 'Geleia de Morango',
     amount: 0
   }, methods: {
     add() {

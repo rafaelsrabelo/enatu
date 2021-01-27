@@ -29,5 +29,7 @@ h2 {
 }
 .number {
   font-size: 24px;
-  background:#ecf0f9;
+}
+.my-card .number.danger {
+  color: red;
 }
