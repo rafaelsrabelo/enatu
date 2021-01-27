@@ -25,23 +25,41 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Estoque<span class="sr-only"></span></a>
+            <a class="nav-link" href="index.html">Estoque<span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
             <div class="btn-register">
               <a class="nav-link" href="form.html">Cadastro</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Clientes<span class="sr-only"></span></a>
-          </li>
         </ul>
       </div>
     </nav>
     <div class="container mt-4">
-      <h2 class="mb-2">ESTQOUE ÉNATU:</h2>
+      <h2 class="mb-2">ESTQOUE ÉNATU</h2>
       <div class="row">
-
+        <div class="col-lg-4 col-sm-6 col-xs-12">
+          <div class="my-card card mt-2">
+            <img class="product mt-2" src="img/morango.jpg" alt="">
+            <p class="title text-center"><strong>{{ flavor }}</strong></p>
+            <button v-on:click="add" type="button" class="btn btn-success mb-1 mr-2 ml-2"><strong>+</strong></button>
+            <button v-on:click="decrease" type="button" class="btn btn-danger mr-2 ml-2"><strong>-</strong></button>
+            <p href="" class="number text-center mt-2 mb-2" :class="{danger: amount < 6}">
+              {{ amount}}
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-xs-12">
+          <div class="my-card card mt-2">
+            <img class="product mt-2" src="img/morango.jpg" alt="">
+            <p class="title text-center"><strong>{{ flavor }}</strong></p>
+            <button v-on:click="add" type="button" class="btn btn-success mb-1 mr-2 ml-2"><strong>+</strong></button>
+            <button v-on:click="decrease" type="button" class="btn btn-danger mr-2 ml-2"><strong>-</strong></button>
+            <p href="" class="number text-center mt-2 mb-2" :class="{danger: amount < 6}">
+              {{ amount}}
+            </p>
+          </div>
+        </div>
         <div class="col-lg-4 col-sm-6 col-xs-12">
           <div class="my-card card mt-2">
             <img class="product mt-2" src="img/morango.jpg" alt="">
