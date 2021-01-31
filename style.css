@@ -1,5 +1,5 @@
 body {
-  background: #ECF0F9;
+  background: #eeeeee;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -10,7 +10,7 @@ h2 {
 
 .my-card {
   height: auto;
-  background: #ecf0f9 ;
+  background: #f9fbff ;
   border-radius: 20px;
   box-shadow: 6px 6px 6px rgba(195, 203, 216, 0.5), -6px -6px 6px #ffffff99;
   overflow: hidden;
